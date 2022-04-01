@@ -14,13 +14,21 @@
       <button id="greenbtn">green button</button>
       <button id="yellowbtn">Red button</button>
       <h2>Update some input field by using Javascript</h2>
-      <ul id="paragrap">
-        <li></li>
-      </ul>
+      <ul id="paragrap"></ul>
       <input id="inputText" type="text" />
       <button id="updateBtn">Update</button>
     </main>
-
+    <h3>Add your comment</h3>
+    <p id="textPost"></p>
+    <textarea name="" id="textArea" cols="50" rows="5"></textarea> <br />
+    <button id="post">Post</button>
+    <script>
+      document.addEventListener("click", function () {
+        const commentText = document.getElementById("textArea");
+        console.log(commentText.value);
+        document.getElementById("textPost").innerText = commentText.value;
+      });
+    </script>
     <script src="event.js"></script>
   </body>
 </html>
