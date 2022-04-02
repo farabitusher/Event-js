@@ -4,13 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bap er <span class="font-semibold text-blue-600">Bank</span></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title class="font-semibold text-blue-600">Bap er Bank</title>
   </head>
   <body>
     <main>
-      <h1 class="text-5xl text-center mt-16">welcome to baper bank</h1>
+      <h1 class="text-5xl text-center mt-16 text-blue-500">
+        welcome to baper bank
+      </h1>
+      <section class="bg-lime-300 h-72 p-8 w-3/4 mx-auto mt-4">
+        <form action="">
+          <h2 class="text-4xl mb-5">Please Log In</h2>
+          <input
+            class="border-2 block rounded-lg p-2 mb-3 border-amber-400 mr-6"
+            type="text"
+            placeholder="Your Email"
+          />
+          <input
+            class="border-2 block rounded-lg p-2 border-amber-400"
+            type="password"
+            name=""
+            id=""
+            placeholder="current password"
+          />
+          <button
+            id="login-btn"
+            class="border-2 bg-blue-500 px-6 py-2 mt-3 text-white text-xl rounded-lg font-medium"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
     </main>
+    <script src="bank.js"></script>
     <!-- tailwind css file  -->
-    <script src="https://cdn.tailwindcss.com"></script>
   </body>
 </html>
