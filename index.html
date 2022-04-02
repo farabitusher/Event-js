@@ -22,12 +22,22 @@
     <p id="textPost"></p>
     <textarea name="" id="textArea" cols="50" rows="5"></textarea> <br />
     <button id="post">Post</button>
+    <h3 id="text">This text can be deleted</h3>
+    <input id="delete-confirm" type="text" />
+    <button id="delete-btn " disabled>Delete</button>
+
+    <!-- Javascript area  -->
     <script>
-      document.addEventListener("click", function () {
-        const commentText = document.getElementById("textArea");
-        console.log(commentText.value);
-        document.getElementById("textPost").innerText = commentText.value;
-      });
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("keyup", function (event) {
+          console.log(event.target.value);
+          const deleteBtn = document.getElementById("delete-btn");
+          const deleteText = document.getElementById("text");
+          if (event.target.value == "delete") {
+            deleteBtn.removeAttribute("disable");
+          }
+        });
     </script>
     <script src="event.js"></script>
   </body>

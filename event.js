@@ -19,3 +19,9 @@ const update = document.getElementById('updateBtn').addEventListener('click', fu
     p.innerText = input.value;
     input.value= ""
 })
+
+document.addEventListener("click", function () {
+    const commentText = document.getElementById("textArea");
+    console.log(commentText.value);
+    document.getElementById("textPost").innerText = commentText.value;
+  });
